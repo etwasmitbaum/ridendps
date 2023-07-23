@@ -1,4 +1,4 @@
-﻿
+
 namespace Riden
 {
     partial class PowerSupplyDialog
@@ -473,10 +473,10 @@ namespace Riden
             // buttonPower
             // 
             this.buttonPower.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonPower.Location = new System.Drawing.Point(10, 182);
+            this.buttonPower.Location = new System.Drawing.Point(10, 174);
             this.buttonPower.Margin = new System.Windows.Forms.Padding(2);
             this.buttonPower.Name = "buttonPower";
-            this.buttonPower.Size = new System.Drawing.Size(62, 19);
+            this.buttonPower.Size = new System.Drawing.Size(72, 32);
             this.buttonPower.TabIndex = 1;
             this.buttonPower.Text = "&On/Off";
             this.buttonPower.UseVisualStyleBackColor = true;

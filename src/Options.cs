@@ -88,7 +88,7 @@ namespace DPS
         public string dump = null;
 
         [CommandLineOption(Description = "Show the GUI")]
-        public bool gui = false;
+        public bool gui = true;
 
         [CommandLineOption(Description = "Enable verbose communication output")]
         public bool verbose = false;

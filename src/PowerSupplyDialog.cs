@@ -1,5 +1,6 @@
 using Riden.Properties;
 using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -11,6 +12,16 @@ namespace Riden
         {
             this.powerSupply = powerSupply;
             InitializeComponent();
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+
+            if (e.CloseReason == CloseReason.WindowsShutDown) return;
+
+            Application.Exit();
+            Process.GetCurrentProcess().Kill();
         }
 
         private void PowerSupplyDialog_Load(object sender, EventArgs e)
