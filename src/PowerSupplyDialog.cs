@@ -194,6 +194,7 @@ namespace Riden
 
         void LoadSettings()
         {
+            /*
             var position = Settings.Default.DialogPosition;
             var size = Settings.Default.DialogSize;
             if (!size.IsEmpty)
@@ -226,10 +227,12 @@ namespace Riden
             }
 
             checkBoxLockControls.Checked = Settings.Default.ControlsLocked;
+            */
         }
 
         void SaveSettings()
         {
+            /*
             Settings.Default.DialogPosition = DesktopBounds.Location;
             Settings.Default.DialogSize = DesktopBounds.Size;
 
@@ -246,6 +249,7 @@ namespace Riden
             Settings.Default.ControlsLocked = checkBoxLockControls.Checked;
 
             Settings.Default.Save();
+            */
         }
 
         void Connect()
